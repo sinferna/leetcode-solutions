@@ -2,8 +2,7 @@
 1class Solution {
 2    public boolean isPalindrome(String s) {
 3        String letters = s.toLowerCase();
-4        String regex = "[^a-z0-9]";
-5        letters = letters.replaceAll(regex, "");
+5        letters = letters.replaceAll("[^a-z0-9]", "");
 6
 7        for (int i = 0; i < letters.length() / 2; i++) {
 8            int j = letters.length() - 1 - i;
